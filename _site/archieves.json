@@ -1,5 +1,13 @@
 [
     {
+      "title": "JavaScript的继承",
+      "url": "/blog/2014/04/18/javascript-inherit",
+      "date": "2014-04-18",
+      "tags": ["JavaScript"  ],
+      "categories": ["前端技术", "笔试面试积累"  ]
+    },
+  
+    {
       "title": "HTTP协议状态码备忘",
       "url": "/blog/2014/04/16/http-code",
       "date": "2014-04-16",
