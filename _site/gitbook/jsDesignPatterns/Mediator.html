@@ -38,7 +38,7 @@
     </head>
     <body>
         
-<div class="book" data-github="LingyuCoder/blog" data-level="3.9" data-basepath=".." data-revision="1397921656305">
+<div class="book" data-github="LingyuCoder/blog" data-level="3.9" data-basepath=".." data-revision="1397921935835">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/LingyuCoder/blog" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -324,7 +324,7 @@
                         <h1 id="mediator-">Mediator——中介者模式</h1>
 <p>中介者是一种行为设计模式，允许我们公开统一的接口，系统的不同部分可以通过这个接口进行通信</p>
 <p>如果一个系统各个组件之间有太多的直接关系，两两之间若有一条边，解耦将会非常困难。但如果我们在其中加入一个中心控制点，各个组件都经过这个中心控制点进行通信，那么每个模块只要关注自己和中心控制点的通信就行了。Mediator就是这个意思。</p>
-<p><img src="..\assets\jsDesignPatterns\5.png" alt="mediator架构图"></p>
+<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/5.png" alt="mediator架构图"></p>
 <h2 id="-">实现方式</h2>
 <p>Mediator模式本质上是Oberver模式的共享目标，把中心控制点当做Subject，而每个组件当做Observer：</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> mediator = (<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
@@ -392,7 +392,7 @@ colleague3.subscribe(<span class="hljs-string">"pub2"</span>, callback);
 colleague2.publish(<span class="hljs-string">"pub2"</span>, <span class="hljs-string">"天镶"</span>, <span class="hljs-string">"想"</span>, <span class="hljs-string">"吃串"</span>);
 </code></pre>
 <p>输出的结果如下：</p>
-<p><img src="..\assets\jsDesignPatterns\6.png" alt="mediator输出"></p>
+<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/6.png" alt="mediator输出"></p>
 <p>信息传递都成功了</p>
 <h2 id="mediator-">Mediator的优缺点</h2>
 <p>Mediator最大的好处就是将系统组件间的复杂的多对多关系简化到了一对多。这样解耦程度较高，添加发布者和订阅者也较为简单。而缺点则是，Mediator本身在通信的中心，其故障将导致所有组件瘫痪。同时模块间间接的通信，也会导致性能下降。而由于松耦合的性质，很难通过仅关注官兵共来确定系统如何做出反应</p>

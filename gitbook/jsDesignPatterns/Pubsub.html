@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="LingyuCoder/blog" data-level="3.6" data-basepath=".." data-revision="1397921656305">
+<div class="book" data-github="LingyuCoder/blog" data-level="3.6" data-basepath=".." data-revision="1397921935835">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/LingyuCoder/blog" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -325,7 +325,7 @@
                     
                         <h1 id="publish-subscribe-">Publish/Subscribe（发布/订阅）模式</h1>
 <p>一种比较常见的实现Observer模式的方式是将ObserverList和Subject相分离，使用一个Event Channel来管理ObserverList，Subject将需要发布的数据交给Event Channel，而观察者也只需要观察Event Channel就行了</p>
-<p><img src="..\assets\jsDesignPatterns\3.png" alt="pubsub架构图"></p>
+<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/3.png" alt="pubsub架构图"></p>
 <p>发布/订阅方式很适合JavaScript，因为ECMAScript本身是基于事件驱动的。很多流行的JavaScript库都有一套发布/订阅实现，比如jQuery：</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">//订阅</span>
 $(dom).on(<span class="hljs-string">"channel"</span>, callback);
@@ -403,7 +403,7 @@ pubsub.unsubscribe(subscription);
 pubsub.publish(<span class="hljs-string">"hello"</span>, [<span class="hljs-string">"天镶"</span>, <span class="hljs-string">"再求"</span>, <span class="hljs-string">"offer"</span>]);
 </code></pre>
 <p>结果可以看到，取消之后，订阅者不会再收到消息了：</p>
-<p><img src="..\assets\jsDesignPatterns\4.png" alt="pubsub输出结果"></p>
+<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/4.png" alt="pubsub输出结果"></p>
 <h2 id="-">优点和缺点</h2>
 <p>Observer模式和Publish/Subscribe模式都能将应用程序分解成更小、更松散耦合的块，以改进代码管理和潜在的复用。并且可以动态的去更改不同部分的关系，有很大的灵活性</p>
 <p>在Observer和Publish/Subscribe中，发布者或Subject不会看到订阅者或观察者的错误，且订阅者和观察者相互之间无视彼此的存在，对变化发布者产生的成本也视而不见</p>

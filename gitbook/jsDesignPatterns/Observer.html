@@ -40,7 +40,7 @@
     </head>
     <body>
         
-<div class="book" data-github="LingyuCoder/blog" data-level="3.5" data-basepath=".." data-revision="1397921656305">
+<div class="book" data-github="LingyuCoder/blog" data-level="3.5" data-basepath=".." data-revision="1397921935835">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="https://github.com/LingyuCoder/blog" target="_blank" class="btn pull-left"><i class="fa fa-github-alt"></i></a>
@@ -331,7 +331,7 @@
 <li>ConcreteSubject（具体目标）：状态发生改变时，向Observer发出通知，存储ConcreteObserver的状态</li>
 <li>ConcreteObserver（具体观察者）：存储一个指向ConcreteSubject的引用，实现Observer的更新接口，使其自身与目标的状态保持一致</li>
 </ul>
-<p><img src="..\assets\jsDesignPatterns\1.png" alt="observer框架图"></p>
+<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/1.png" alt="observer框架图"></p>
 <h2 id="observerlist-">ObserverList的实现</h2>
 <p>每一个Subject应当维护一个观察者列表，用于添加、删除或通知观察它的所有观察者，要维护这个观察者列表，自然需要实现一些基础方法，比如CRUD操作等：</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">//构造函数</span>
@@ -442,7 +442,7 @@ $btn.addObserver(observer1);
 $btn.addObserver(observer2);
 </code></pre>
 <p>我们在input框中输入内容后，点击按钮，两个观察者将会获得input框的内容：</p>
-<p><img src="..\assets\jsDesignPatterns\2.png" alt="observer输出结果"></p>
+<p><img src="http://skyinlayerblog.qiniudn.com/img/gitbook/jsDesignPatterns/2.png" alt="observer输出结果"></p>
 
                     
                     </section>
