@@ -1,5 +1,13 @@
 [
     {
+      "title": "JavaScript的设计模式",
+      "url": "/blog/2014/04/20/js-design-patterns",
+      "date": "2014-04-20",
+      "tags": ["JavaScript"  ],
+      "categories": ["前端技术"  ]
+    },
+  
+    {
       "title": "JavaScript的继承",
       "url": "/blog/2014/04/18/javascript-inherit",
       "date": "2014-04-18",
