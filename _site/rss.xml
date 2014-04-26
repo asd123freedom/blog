@@ -8,6 +8,16 @@
         <language>zh-CN</language>
         
             <item>
+                <title><![CDATA[ 有没有感觉有一些变化？ ]]></title>
+                <link>http://skyinlayer.com/blog/2014/04/26/new-page2</link>
+                <category>IT技术</category>
+                <author>lingyucoder@gmail.com (skyinlayer)</author>
+                <pubDate>Sat, 26 Apr 2014 00:00:00 +0800</pubDate>
+                <description><![CDATA[ 如果你是曾经来过天镶博客的朋友，肯定会感觉到很大的不同，博客换页面啦！连续六天没有更新博客了，除了各种面试和项目上的事情以外，闲暇时间都在写这个新页面，也就没有写博文了。经过3天半的努力，新页面也终于做出来了~ ]]></description>
+                <guid isPermaLink="false">http://skyinlayer.com/blog/2014/04/26/new-page2</guid>
+            </item>
+        
+            <item>
                 <title><![CDATA[ JavaScript的设计模式 ]]></title>
                 <link>http://skyinlayer.com/blog/2014/04/20/js-design-patterns</link>
                 <category>IT技术</category>
