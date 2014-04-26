@@ -183,7 +183,7 @@
                 <category>IT技术</category>
                 <author>lingyucoder@gmail.com (skyinlayer)</author>
                 <pubDate>Wed, 19 Mar 2014 00:00:00 +0800</pubDate>
-                <description><![CDATA[ 这篇文章的所有内容均来自 朴灵的《深入浅出Node.js》及<a href="http://www.jayconrod.com/posts/55/a-tour-of-v8-garbage-collection">A tour of V8:Garbage Collection</a>，后者还有中文翻译版<a href="http://newhtml.net/v8-garbage-collection/">V8 之旅： 垃圾回收器</a>，我在这里只是做了个记录和结合 ]]></description>
+                <description><![CDATA[ 这篇文章的所有内容均来自 朴灵的《深入浅出Node.js》及<a href='http://www.jayconrod.com/posts/55/a-tour-of-v8-garbage-collection'>A tour of V8:Garbage Collection</a>，后者还有中文翻译版<a href='http://newhtml.net/v8-garbage-collection/'>V8 之旅： 垃圾回收器</a>，我在这里只是做了个记录和结合 ]]></description>
                 <guid isPermaLink="false">http://skyinlayer.com/blog/2014/03/19/v8-gc</guid>
             </item>
         
@@ -203,7 +203,7 @@
                 <category>IT技术</category>
                 <author>lingyucoder@gmail.com (skyinlayer)</author>
                 <pubDate>Mon, 17 Mar 2014 00:00:00 +0800</pubDate>
-                <description><![CDATA[ 忙了几天终于把SkyRTC库上传到NPM上了，并写了一份详细的使用文档，标明了基本的使用方法和类，修正了几个小bug，更多的bug还需要更多的测试，把文档发一下，具体见<a href="https://github.com/LingyuCoder/SkyRTC">我在Github上的SkyRTC项目</a> ]]></description>
+                <description><![CDATA[ 忙了几天终于把SkyRTC库上传到NPM上了，并写了一份详细的使用文档，标明了基本的使用方法和类，修正了几个小bug，更多的bug还需要更多的测试，把文档发一下，具体见<a href='https://github.com/LingyuCoder/SkyRTC'>我在Github上的SkyRTC项目</a> ]]></description>
                 <guid isPermaLink="false">http://skyinlayer.com/blog/2014/03/17/SkyRTC-doc</guid>
             </item>
         
@@ -213,7 +213,7 @@
                 <category>IT技术</category>
                 <author>lingyucoder@gmail.com (skyinlayer)</author>
                 <pubDate>Mon, 17 Mar 2014 00:00:00 +0800</pubDate>
-                <description><![CDATA[ 忙了几天终于把SkyRTC库上传到NPM上了，并写了一份详细的使用文档，标明了基本的使用方法和类，修正了几个小bug，更多的bug还需要更多的测试，把文档发一下，具体见<a href="https://github.com/LingyuCoder/SkyRTC-demo">我在Github上的SkyRTC-demo</a> ]]></description>
+                <description><![CDATA[ 忙了几天终于把SkyRTC库上传到NPM上了，并写了一份详细的使用文档，标明了基本的使用方法和类，修正了几个小bug，更多的bug还需要更多的测试，把文档发一下，具体见<a href='https://github.com/LingyuCoder/SkyRTC-demo'>我在Github上的SkyRTC-demo</a> ]]></description>
                 <guid isPermaLink="false">http://skyinlayer.com/blog/2014/03/17/SkyRTC-demo</guid>
             </item>
         
@@ -223,7 +223,7 @@
                 <category>IT技术</category>
                 <author>lingyucoder@gmail.com (skyinlayer)</author>
                 <pubDate>Mon, 17 Mar 2014 00:00:00 +0800</pubDate>
-                <description><![CDATA[ 忙了几天终于把SkyRTC库上传到NPM上了，并写了一份详细的使用文档，标明了基本的使用方法和类，修正了几个小bug，更多的bug还需要更多的测试，把文档发一下，具体见<a href="https://github.com/LingyuCoder/SkyRTC-client">我在Github上的SkyRTC-client项目</a> ]]></description>
+                <description><![CDATA[ 忙了几天终于把SkyRTC库上传到NPM上了，并写了一份详细的使用文档，标明了基本的使用方法和类，修正了几个小bug，更多的bug还需要更多的测试，把文档发一下，具体见<a href='https://github.com/LingyuCoder/SkyRTC-client'>我在Github上的SkyRTC-client项目</a> ]]></description>
                 <guid isPermaLink="false">http://skyinlayer.com/blog/2014/03/17/SkyRTC-client-doc</guid>
             </item>
         
@@ -363,7 +363,7 @@
                 <category>IT技术</category>
                 <author>lingyucoder@gmail.com (skyinlayer)</author>
                 <pubDate>Wed, 05 Mar 2014 00:00:00 +0800</pubDate>
-                <description><![CDATA[ 最近看前端相关面试题，看到很多关于CSS布局的面试题。于是乎自己实现了几个常用的布局，这里记录一下实现。所有的布局均已上传到github，命名为<a href="https://github.com/LingyuCoder/sky_layouts">sky_layouts项目</a> ]]></description>
+                <description><![CDATA[ 最近看前端相关面试题，看到很多关于CSS布局的面试题。于是乎自己实现了几个常用的布局，这里记录一下实现。所有的布局均已上传到github，命名为<a href='https://github.com/LingyuCoder/sky_layouts'>sky_layouts项目</a> ]]></description>
                 <guid isPermaLink="false">http://skyinlayer.com/blog/2014/03/05/layouts</guid>
             </item>
         
@@ -453,7 +453,7 @@
                 <category>IT技术</category>
                 <author>lingyucoder@gmail.com (skyinlayer)</author>
                 <pubDate>Fri, 14 Feb 2014 00:00:00 +0800</pubDate>
-                <description><![CDATA[ <span class="image image-full"><img src="/img/responsive.png"/></span>总是在各个地方看到响应式Web设计。一直对其很感兴趣，也只是零零散散的接触，但并没有系统的去学习响应式。这两天读了Ben Frain著（王永强 译）的《响应式Web设计-HTML5和CSS3实践》，收获颇多，在这里记录一下 ]]></description>
+                <description><![CDATA[ <span class='image image-full'><img src='/img/responsive.png'/></span>总是在各个地方看到响应式Web设计。一直对其很感兴趣，也只是零零散散的接触，但并没有系统的去学习响应式。这两天读了Ben Frain著（王永强 译）的《响应式Web设计-HTML5和CSS3实践》，收获颇多，在这里记录一下 ]]></description>
                 <guid isPermaLink="false">http://skyinlayer.com/blog/2014/02/14/responsive-web-design</guid>
             </item>
         
@@ -463,7 +463,7 @@
                 <category>IT技术</category>
                 <author>lingyucoder@gmail.com (skyinlayer)</author>
                 <pubDate>Tue, 11 Feb 2014 00:00:00 +0800</pubDate>
-                <description><![CDATA[ 最近做了个heroku上的JavaScript的测试（<a href="http://javascript-puzzlers.herokuapp.com/">题目地址</a>），错了一大堆，感觉js的概念还有很多不是很清晰，这里记录一下，下半部分 ]]></description>
+                <description><![CDATA[ 最近做了个heroku上的JavaScript的测试（<a href='http://javascript-puzzlers.herokuapp.com/'>题目地址</a>），错了一大堆，感觉js的概念还有很多不是很清晰，这里记录一下，下半部分 ]]></description>
                 <guid isPermaLink="false">http://skyinlayer.com/blog/2014/02/11/javascript-puzzlers-2</guid>
             </item>
         
@@ -473,7 +473,7 @@
                 <category>IT技术</category>
                 <author>lingyucoder@gmail.com (skyinlayer)</author>
                 <pubDate>Mon, 10 Feb 2014 00:00:00 +0800</pubDate>
-                <description><![CDATA[ 最近做了个heroku上的JavaScript的测试（<a href="http://javascript-puzzlers.herokuapp.com/">题目地址</a>），错了一大堆，感觉js的概念还有很多不是很清晰，这里记录一下 ]]></description>
+                <description><![CDATA[ 最近做了个heroku上的JavaScript的测试（<a href='http://javascript-puzzlers.herokuapp.com/'>题目地址</a>），错了一大堆，感觉js的概念还有很多不是很清晰，这里记录一下 ]]></description>
                 <guid isPermaLink="false">http://skyinlayer.com/blog/2014/02/10/javascript-puzzlers</guid>
             </item>
         

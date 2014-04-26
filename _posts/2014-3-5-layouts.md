@@ -2,7 +2,7 @@
 layout: art
 title: 网页布局实例
 subTitle: 一些常见页面布局之我见
-desc: 最近看前端相关面试题，看到很多关于CSS布局的面试题。于是乎自己实现了几个常用的布局，这里记录一下实现。所有的布局均已上传到github，命名为<a href="https://github.com/LingyuCoder/sky_layouts">sky_layouts项目</a>
+desc: 最近看前端相关面试题，看到很多关于CSS布局的面试题。于是乎自己实现了几个常用的布局，这里记录一下实现。所有的布局均已上传到github，命名为<a href='https://github.com/LingyuCoder/sky_layouts'>sky_layouts项目</a>
 categories: [前端技术]
 tags: [HTML, CSS]
 ---

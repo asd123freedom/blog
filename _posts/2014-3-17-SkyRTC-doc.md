@@ -2,7 +2,7 @@
 layout: art
 title: 开源WebRTC库——SkyRTC文档（服务器部分）
 subTitle: 使用SkyRTC搭建视频、音频聊天室
-desc: 忙了几天终于把SkyRTC库上传到NPM上了，并写了一份详细的使用文档，标明了基本的使用方法和类，修正了几个小bug，更多的bug还需要更多的测试，把文档发一下，具体见<a href="https://github.com/LingyuCoder/SkyRTC">我在Github上的SkyRTC项目</a>
+desc: 忙了几天终于把SkyRTC库上传到NPM上了，并写了一份详细的使用文档，标明了基本的使用方法和类，修正了几个小bug，更多的bug还需要更多的测试，把文档发一下，具体见<a href='https://github.com/LingyuCoder/SkyRTC'>我在Github上的SkyRTC项目</a>
 tags: [WebSocket, NodeJs, WebIM, WebRTC, JavaScript]
 categories: [即时通信]
 ---
