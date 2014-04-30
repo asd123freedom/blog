@@ -10,7 +10,7 @@
 	<meta name="robots" content="all">
 	<link rel="stylesheet" media="screen" href="http://cdn.staticfile.org/highlight.js/8.0/styles/dark.min.css">
 	<link rel="stylesheet" type="text/css" href="http://cdn.staticfile.org/font-awesome/4.0.3/css/font-awesome.min.css">
-	<link rel="stylesheet" media="screen" href="http://skyinlayerblog.qiniudn.com/blog/css/style.css">
+	<link rel="stylesheet" media="screen" href="/css/style.min.css">
 	<!--[if lt IE 9]>
 		<script src="http://cdn.staticfile.org/html5shiv/r29/html5.js"></script>
 	<![endif]-->
@@ -18,7 +18,7 @@
 <body ng-controller="BlogController">
 	<a href="javascript:window.scrollTo(0,0)" class="g-totop u-totop"></a>
 	<header class="g-hd m-hd" id="header">
-		<img alt="天镶的头像" class="u-avatar" src="http://skyinlayerblog.qiniudn.com/img/back/avatar.jpg"/>
+		<a href="/profile.html"><img alt="天镶的头像" class="u-avatar" src="http://skyinlayerblog.qiniudn.com/img/back/avatar.jpg"/></a>
 		<div class="u-title" ng-click="toHome()">天镶の小屋</div>
 		<nav class="nav">
 			<ul class="links">
@@ -38,12 +38,12 @@
 		</nav>
 	</header>
 	<div class="g-wrap">
-		<div class="u-loading" loading>
+		<div class="u-loading" blog-loading>
 		  <div class="circle">
 		    <div class="loader"></div>
 		  </div>
 		</div>
-		<div class="g-mn m-mn" ng-view onload="highlightAndDuoshuo()">
+		<div  ng-show="loaded" class="g-mn m-mn" ng-view onload="highlightAndDuoshuo()">
 		</div>
 		<aside class="g-sd m-sd">
 			<section class="recent g-links">
@@ -82,5 +82,5 @@
 <script type="text/javascript" src="http://cdn.staticfile.org/highlight.js/8.0/highlight.min.js"></script>
 <script type="text/javascript" src="http://cdn.staticfile.org/jquery/2.1.1-beta1/jquery.min.js"></script>
 <script type="text/javascript" src="http://static.duoshuo.com/embed.js"></script>
-<script type="text/javascript" src="http://skyinlayerblog.qiniudn.com/blog/js/main.js"></script>
+<script type="text/javascript" src="/js/main.min.js"></script>
 </html>

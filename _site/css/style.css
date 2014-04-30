@@ -436,6 +436,12 @@ blockquote {
   border-radius: 50%;
   vertical-align: top;
   margin-right: 1rem;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.m-hd .u-avatar:hover {
+  opacity: 1;
 }
 
 @media only screen and (min-width: 62.5em) {
