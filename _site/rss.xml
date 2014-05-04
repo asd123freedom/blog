@@ -8,6 +8,16 @@
         <language>zh-CN</language>
         
             <item>
+                <title><![CDATA[ Google的HTML/CSS样式指南 ]]></title>
+                <link>http://skyinlayer.com/blog/2014/05/04/google-style-guide</link>
+                <category>IT技术</category>
+                <author>lingyucoder@gmail.com (skyinlayer)</author>
+                <pubDate>Sun, 04 May 2014 00:00:00 +0800</pubDate>
+                <description><![CDATA[ 之前读过网易的NEC，以及百度的前端编码规范，感觉自己HTML和CSS代码写的很烂，这里又读了一下Google的style guide，发现有很多地方值得学习补充，在这里大致上翻译一下<img src='http://skyinlayerblog.qiniudn.com/blog/cover/2014-5-4-google-style-guide.jpg' alt='Google样式指南'> ]]></description>
+                <guid isPermaLink="false">http://skyinlayer.com/blog/2014/05/04/google-style-guide</guid>
+            </item>
+        
+            <item>
                 <title><![CDATA[ JavaScript的MV*模式 ]]></title>
                 <link>http://skyinlayer.com/blog/2014/05/03/javascript-mvc</link>
                 <category>IT技术</category>

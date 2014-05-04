@@ -1,5 +1,16 @@
 [
     {
+      "title": "Google的HTML/CSS样式指南",
+      "url": "/blog/2014/05/04/google-style-guide",
+      "date": "2014-05-04",
+      "tags": ["HTML", "CSS"  ],
+      "categories": ["前端技术"  ],
+      "desc": "之前读过网易的NEC，以及百度的前端编码规范，感觉自己HTML和CSS代码写的很烂，这里又读了一下Google的style guide，发现有很多地方值得学习补充，在这里大致上翻译一下<img src='http://skyinlayerblog.qiniudn.com/blog/cover/2014-5-4-google-style-guide.jpg' alt='Google样式指南'>",
+      "subTitle": "写更简洁、更美观的HTML和CSS",
+      "id": "/blog/2014/05/04/google-style-guide"
+    },
+  
+    {
       "title": "JavaScript的MV*模式",
       "url": "/blog/2014/05/03/javascript-mvc",
       "date": "2014-05-03",

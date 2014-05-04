@@ -638,7 +638,9 @@ blockquote {
 }
 
 .m-mn .post .brief img {
-  max-width: 100%;
+  width: 100%;
+  margin-top: 1em;
+  box-shadow: 0 0 4px rgba(0,0,0,.8);
 }
 
 .m-mn .post .info {

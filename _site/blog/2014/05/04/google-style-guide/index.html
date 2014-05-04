@@ -1,0 +1,424 @@
+<article class="post">
+	<div class="content desc">
+		<header>
+			<h1 class="title">Google的HTML/CSS样式指南</h2>
+			<div class="byline"><h4>写更简洁、更美观的HTML和CSS</h4>
+				</div>
+		</header>
+		<p>之前读过网易的NEC，以及百度的前端编码规范，感觉自己HTML和CSS代码写的很烂，这里又读了一下Google的style guide，发现有很多地方值得学习补充，在这里大致上翻译一下</p>
+
+<h2 id="">通用样式规范</h2>
+
+<h3 id="_2">使用相对协议</h3>
+
+<pre class="xml"><code class="xml">&lt;!-- 不推荐使用 --&gt;
+&lt;script src=&quot;http://www.google.com/js/gweb/analytics/autotrack.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- 推荐使用 --&gt;
+&lt;script src=&quot;//www.google.com/js/gweb/analytics/autotrack.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+<h3 id="htmltab">HTML文件中一个tab两个空格</h3>
+
+<p>老调重弹，不要混合使用tab和空格</p>
+
+<pre class="xml"><code class="xml">&lt;ul&gt;
+  &lt;li&gt;Fantastic
+  &lt;li&gt;Great
+&lt;/ul&gt;
+
+.example {
+  color: blue;
+}</code></pre>
+
+<h3 id="_3">仅使用小写</h3>
+
+<p>所有代码应该使用小写，比如HTML元素的名称、属性、属性值（除了text/CDATA）。CSS的选择器、属性、属性值等等</p>
+
+<pre class="xml"><code class="xml">&lt;!-- 不推荐使用 --&gt;
+&lt;A HREF=&quot;/&quot;&gt;Home&lt;/A&gt;
+
+&lt;!-- 推荐使用 --&gt;
+&lt;img src=&quot;google.png&quot; alt=&quot;Google&quot;&gt;</code></pre>
+
+<pre class="css21"><code class="css21">&lt;!-- 不推荐使用 --&gt;
+color: #E5E5E5;
+
+&lt;!-- 推荐使用 --&gt;
+color: #e5e5e5;</code></pre>
+
+<h3 id="_4">不要有后缀的空格</h3>
+
+<pre class="xml"><code class="xml">&lt;!-- 不推荐使用 --&gt;
+&lt;p&gt;What?_
+
+&lt;!-- 推荐使用 --&gt;
+&lt;p&gt;Yes please.</code></pre>
+
+<h3 id="utf8">使用UTF-8编码</h3>
+
+<p>保证编辑器的编码字符集为UTF-8，同时在文档中添加<code>&lt;meta charset=&quot;utf-8&quot;&gt;</code></p>
+
+<h3 id="_5">在必要的时候，在合适的地方添加注释</h3>
+
+<p>用注释来表明元素的范围以及它的用途</p>
+
+<h3 id="todotodo">仅使用TODO来添加todo任务</h3>
+
+<h2 id="html">HTML样式规范</h2>
+
+<h3 id="html5">使用HTML5文档类型</h3>
+
+<p>使用<code>&lt;!DOCTYPE html&gt;</code>来声明文档类型，建议使用<code>text/html</code>来定义HTML文件的MIME类型，不要使用<code>application/xhtml+xml</code>来定义。在编写HTML时，空元素可以不必闭合，如<code>&lt;br&gt;</code>不必写成<code>&lt;br/&gt;</code></p>
+
+<h3 id="html_2">使用HTML验证器进行验证</h3>
+
+<p>尽量使用HTML验证器验证过的代码</p>
+
+<pre class="xml"><code class="xml">&lt;!-- 不推荐使用 --&gt;
+&lt;title&gt;Test&lt;/title&gt;
+&lt;article&gt;This is only a test.
+
+&lt;!-- 推荐使用 --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Test&lt;/title&gt;
+&lt;article&gt;This is only a test.&lt;/article&gt;</code></pre>
+
+<h3 id="_6">根据用途使用元素</h3>
+
+<p>使用元素时应当根据元素的作用来选择适当的标签，<code>&lt;h1&gt;</code>~<code>&lt;h6&gt;</code>用来表示头，<code>&lt;p&gt;</code>元素表示段落，<code>&lt;a&gt;</code>元素表示超链接等等。根据用途使用元素对可访问性，重用和代码效率等有很重要的帮助</p>
+
+<pre class="xml"><code class="xml">&lt;!-- 不推荐使用 --&gt;
+&lt;div onclick=&quot;goToRecommendations();&quot;&gt;All recommendations&lt;/div&gt;
+
+&lt;!-- 推荐使用 --&gt;
+&lt;a href=&quot;recommendations/&quot;&gt;All recommendations&lt;/a&gt;</code></pre>
+
+<h3 id="alt">对于多媒体元素，提供替换文本（alt）</h3>
+
+<p>对于多媒体元素，像图片，视频，动画对象如canvas等等，应该为其提供有意义的替换文本（alt），同时尽可能为视频和音频提供副本（不同格式）和字幕</p>
+
+<p>这同样关乎到可访问性，当盲人用户需要通过image等获得信息时，可以转而通过alt中的文字来获得信息</p>
+
+<pre class="xml"><code class="xml">&lt;!-- 不推荐使用 --&gt;
+&lt;img src=&quot;spreadsheet.png&quot;&gt;
+
+&lt;!-- 推荐使用 --&gt;
+&lt;img src=&quot;spreadsheet.png&quot; alt=&quot;Spreadsheet screenshot.&quot;&gt;</code></pre>
+
+<h3 id="_7">将结构、表现、行为三者分离</h3>
+
+<p>严格将结构（标记），表现（样式）和行为（脚本）进行分离解耦，使他们之间相互独立</p>
+
+<p>具体做法就是将HTML文档和模板中仅包含HTML，样式妨碍CSS中，而行为相关代码放在脚本中</p>
+
+<p>这样更易于网页的维护和重用</p>
+
+<pre class="xml"><code class="xml">&lt;!-- 不推荐使用 --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;title&gt;HTML sucks&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;base.css&quot; media=&quot;screen&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;grid.css&quot; media=&quot;screen&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;print.css&quot; media=&quot;print&quot;&gt;
+&lt;h1 style=&quot;font-size: 1em;&quot;&gt;HTML sucks&lt;/h1&gt;
+&lt;p&gt;I’ve read about this on a few sites but now I’m sure:
+  &lt;u&gt;HTML is stupid!!1&lt;/u&gt;
+&lt;center&gt;I can’t believe there’s no way to control the styling of
+  my website without doing everything all over again!&lt;/center&gt;
+  
+&lt;!-- 推荐使用 --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;title&gt;My first CSS-only redesign&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;default.css&quot;&gt;
+&lt;h1&gt;My first CSS-only redesign&lt;/h1&gt;
+&lt;p&gt;I’ve read about this on a few sites but today I’m actually
+  doing it: separating concerns and avoiding anything in the HTML of
+  my website that is presentational.
+&lt;p&gt;It’s awesome!</code></pre>
+
+<h3 id="_8">避免引用实体</h3>
+
+<p>可以直接使用UTF-8等字符集中的字符替代实体，除了一些在HTML中有特殊意义的字符（如<code>&lt;</code>和<code>&amp;</code>）需要使用实体代替以外，尽量不要使用实体</p>
+
+<pre class="xml"><code class="xml">&lt;!-- 不推荐使用 --&gt;
+The currency symbol for the Euro is &amp;ldquo;&amp;eur;&amp;rdquo;.
+
+&lt;!-- 推荐使用 --&gt;
+The currency symbol for the Euro is “€”.</code></pre>
+
+<h3 id="_9">省略可选标签</h3>
+
+<p>出于降低文档大小和代码可读性考虑，可以将可选标签省略。HTML5定义了一套<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/syntax.html#syntax-tag-omission">可选标签规范</a>，标明哪些元素时可选的</p>
+
+<pre class="xml"><code class="xml">&lt;!-- 不推荐使用 --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Spending money, spending bytes&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Sic.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+&lt;!-- 推荐使用 --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;title&gt;Saving money, saving bytes&lt;/title&gt;
+&lt;p&gt;Qed.</code></pre>
+
+<h3 id="type">省略样式表和脚本的type属性</h3>
+
+<pre class="xml"><code class="xml">&lt;!-- 不推荐使用 --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;//www.google.com/css/maia.css&quot;
+  type=&quot;text/css&quot;&gt;
+&lt;script src=&quot;//www.google.com/js/gweb/analytics/autotrack.js&quot;
+  type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;!-- 推荐使用 --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;//www.google.com/css/maia.css&quot;&gt;
+&lt;script src=&quot;//www.google.com/js/gweb/analytics/autotrack.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+<h3 id="_10">块级元素占用一行且合理缩进</h3>
+
+<p>每个块级元素，列表项、表格元素单独占用一行，并为每个子元素提供适当的缩进（两个空格）</p>
+
+<pre class="xml"><code class="xml">&lt;!-- 推荐使用 --&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Space&lt;/em&gt;, the final frontier.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+  &lt;li&gt;Moe
+  &lt;li&gt;Larry
+  &lt;li&gt;Curly
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;Income
+      &lt;th scope=&quot;col&quot;&gt;Taxes
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$ 5.00
+      &lt;td&gt;$ 4.50
+&lt;/table&gt;</code></pre>
+
+<h3 id="_11">属性值使用双引号包裹</h3>
+
+<pre class="xml"><code class="xml">&lt;!-- 不推荐使用 --&gt;
+&lt;a class=&#39;maia-button maia-button-secondary&#39;&gt;Sign in&lt;/a&gt;
+
+&lt;!-- 推荐使用 --&gt;
+&lt;a class=&quot;maia-button maia-button-secondary&quot;&gt;Sign in&lt;/a&gt;</code></pre>
+
+<h2 id="css">CSS样式规范</h2>
+
+<h3 id="css_2">使用验证过的CSS代码</h3>
+
+<p>除非CSS验证器有bug或需要专有语法，否则使用验证过的CSS代码</p>
+
+<h3 id="id">使用有意义的ID和类命名</h3>
+
+<p>命名应当反映出元素的用途。详细命名规则可以看<a href="http://nec.netease.com/standard/css-name.html">NEC的CSS命名规则</a></p>
+
+<pre class="css21"><code class="css21">/* 不推荐使用 */
+#yee-1901 {}
+.button-green {}
+.clear {}
+
+/* 推荐使用 */
+#gallery {}
+#login {}
+.video {}
+.aux {}
+.alt {}</code></pre>
+
+<h3 id="id_2">使用简短但不失描述性的ID和类命名</h3>
+
+<pre class="css21"><code class="css21">/* 不推荐使用 */
+#navigation {}
+.atr {}
+
+/* 推荐使用 */
+#nav {}
+.author {}</code></pre>
+
+<h3 id="id_3">避免在元素选择器之后使用使用ID和类选择器</h3>
+
+<pre class="css21"><code class="css21">/* 不推荐使用 */
+ul#example {}
+div.error {}
+
+/* 推荐使用 */
+#example {}
+.error {}</code></pre>
+
+<h3 id="_12">尽可能对属性进行合并</h3>
+
+<p>很多属性（padding、margin、background、font、border等等）都是可以合并的，尽可能合并他们</p>
+
+<pre class="css21"><code class="css21">/* 不推荐使用 */
+border-top-style: none;
+font-family: palatino, georgia, serif;
+font-size: 100%;
+line-height: 1.6;
+padding-bottom: 2em;
+padding-left: 1em;
+padding-right: 1em;
+padding-top: 0;
+
+/* 推荐使用 */
+border-top: 0;
+font: 100%/1.6 palatino, georgia, serif;
+padding: 0 1em 2em;</code></pre>
+
+<h3 id="0">属性值为0时不要携带单位</h3>
+
+<pre class="css21"><code class="css21">margin: 0;
+padding: 0;</code></pre>
+
+<h3 id="0_2">小数的整数部分为0时，省略整数部分</h3>
+
+<pre class="css21"><code class="css21">font-size: .8em;</code></pre>
+
+<h3 id="16">颜色为16进制表示时进行缩写</h3>
+
+<pre class="css21"><code class="css21">/* 不推荐使用 */
+color: #eebbcc;
+
+/* 推荐使用 */
+color: #ebc;</code></pre>
+
+<h3 id="id_4">ID和类命名添加前缀表示命名空间</h3>
+
+<p>同NEC的命名方式，或者通过模块名来定义前缀</p>
+
+<h2 id="css_3">CSS格式规范</h2>
+
+<h3 id="css_4">CSS属性申明顺序</h3>
+
+<p>可以按照字典序进行排序，方便查找，但同一属性的不同实现声明在一起，且按照私有实现在前，W3C标准在后的顺序排列</p>
+
+<p>ps：属性顺序排列有另一种说法是：定位相关（position、float、display、top、left、right、bottom、z-index等）在前，随后是盒子模型相关（width、height、padding、margin、border等等），随后是背景相关（background，background-image等等），然后是文字相关（colr，line-height、font等等），然后是一些其他属性（border-radius，opacity等等），最后是动画属性（transition、animation等）</p>
+
+<pre class="css21"><code class="css21">background: fuchsia;
+border: 1px solid;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+color: black;
+text-align: center;
+text-indent: 2em;</code></pre>
+
+<h3 id="_13">代码块缩进</h3>
+
+<p>所有申明都应该有适当的缩进，就算<code>@media</code>媒体查询也不例外</p>
+
+<pre class="css21"><code class="css21">@media screen, projection {
+
+  html {
+    background: #fff;
+    color: #444;
+  }
+
+}</code></pre>
+
+<h3 id="_14">所有属性之后都加上分号</h3>
+
+<p>虽然最后一个属性可以不加分号，但建议都加上</p>
+
+<pre class="css21"><code class="css21">/* 不推荐使用 */
+.test {
+  display: block;
+  height: 100px
+}
+
+/* 推荐使用 */
+.test {
+  display: block;
+  height: 100px;
+}</code></pre>
+
+<h3 id="_15">属性名后加上个空格</h3>
+
+<pre class="css21"><code class="css21">/* 不推荐使用 */
+h3 {
+  font-weight:bold;
+}
+
+/* 推荐使用 */
+h3 {
+  font-weight: bold;
+}</code></pre>
+
+<h3 id="_16">选择器群组各占一行</h3>
+
+<pre class="css21"><code class="css21">/* 不推荐使用 */
+a:focus, a:active {
+  position: relative; top: 1px;
+}
+
+/* 推荐使用 */
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  line-height: 1.2;
+}</code></pre>
+
+<h3 id="_17">在两个不同的声明中添加回车来区分</h3>
+
+<pre class="css21"><code class="css21">html {
+  background: #fff;
+}
+
+body {
+  margin: auto;
+  width: 50%;
+}</code></pre>
+
+<h3 id="css_5">在CSS中省略引号，只在必要时候使用单引号</h3>
+
+<pre class="css21"><code class="css21">/* 不推荐使用 */
+@import url(&quot;//www.google.com/css/maia.css&quot;);
+
+html {
+  font-family: &quot;open sans&quot;, arial, sans-serif;
+}
+
+/* 推荐使用 */
+@import url(//www.google.com/css/maia.css);
+
+html {
+  font-family: &#39;open sans&#39;, arial, sans-serif;
+}</code></pre>
+
+<h3 id="_18">通过注释分割代码</h3>
+
+<p>通过注释将代码分割成多个分组，注释之后另起一行</p>
+
+<pre class="css21"><code class="css21">/* Header */
+
+#adw-header {}
+
+/* Footer */
+
+#adw-footer {}
+
+/* Gallery */
+
+.adw-gallery {}</code></pre>
+
+<h2 id="_19">总结</h2>
+
+<p>大致上粗略的看了一遍Google的HTML和CSS规范，概括的细节还是比较多的。从中也能看出Google对文档大小的重视，基本上都是能省则省，能用一个字符绝不用两个。其很多地方还是非常值得参考的</p>
+		<hr>
+		<div class="tags">
+			
+				<a class="tag" ng-href="#/tag/HTML" href="/show_by_tag.html?tag=HTML" class="tag">HTML</a>
+			
+				<a class="tag" ng-href="#/tag/CSS" href="/show_by_tag.html?tag=CSS" class="tag">CSS</a>
+			
+		</div>
+		<div class="ds-thread" data-url="http://skyinlayer.com//blog/2014/05/04/google-style-guide" data-thread-key="/blog/2014/05/04/google-style-guide" data-title="Google的HTML/CSS样式指南" style="min-height:277px"></div>
+	</div>
+</article>
