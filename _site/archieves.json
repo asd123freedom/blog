@@ -1,5 +1,16 @@
 [
     {
+      "title": "修正了一下博客的RSS",
+      "url": "/blog/2014/05/05/fixed-rss",
+      "date": "2014-05-05",
+      "tags": ["github", "jekyll"  ],
+      "categories": ["网站建设"  ],
+      "desc": "把页面换成Angular+ngRoute，所有的URL都改成ngRoute的URL形式，但忘记修改RSS中的URL了，导致订阅之后跳转出了问题，这里修复了一下这个bug",
+      "subTitle": "修正了之前换页面使用Angular导致的URL出错的BUG",
+      "id": "/blog/2014/05/05/fixed-rss"
+    },
+  
+    {
       "title": "Google的HTML/CSS样式指南",
       "url": "/blog/2014/05/04/google-style-guide",
       "date": "2014-05-04",
